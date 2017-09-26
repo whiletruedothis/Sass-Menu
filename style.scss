@@ -1,0 +1,49 @@
+body{
+    background-color: #ffffff;
+    margin: 0
+}
+
+.card{
+    top: 100px;
+    left: 50;
+    border-style: solid;
+    height: 200px;
+    width: 250px;
+    position: relative;
+    margin: 10px;
+    float: left;
+     
+    .container{
+        margin: 25px;
+        text-align: center;
+    }
+    .exit{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+}
+
+.menu{
+    background-color: black;
+    text-align: center;
+    display: block;
+    position: fixed;
+    width: 100%;
+    list-style: none;
+    li{
+        color: white;
+        display: inline;
+        margin: 5px;
+        &:hover { color: #535353; }
+    }
+    .window{
+        display: none;
+        position: absolute;
+        top: 100%;
+        background:black;
+        padding: 10px 0;
+    }
+
+
+}
