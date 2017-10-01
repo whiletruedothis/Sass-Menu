@@ -25,31 +25,74 @@ body {
   top: 5px;
 }
 
-.menu {
-  background-color: black;
-  text-align: center;
-  display: block;
-  position: fixed;
+.navMain {
   width: 100%;
-  list-style: none;
+  height: 60px;
+  background-color: #000000;
+  position: fixed;
 }
 
-.menu li {
-  color: white;
-  display: inline;
-  margin: 5px;
+.navMain .logo {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24;
+  padding: 10px 10px;
+  margin-top: 5px;
 }
 
-.menu li:hover {
-  color: #535353;
+.navMain > ul {
+  width: 500px;
+  float: left;
+  list-style-type: none;
 }
 
-.menu .window {
-  display: none;
+.navMain > ul > li {
+  float: left;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.navItem {
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background-color: #352D2D;
+}
+
+.navItem:focus {
+  background-color: #A10F0F;
+}
+
+.navItem:focus ul {
+  max-height: 400px;
+}
+
+.navItem > ul {
   position: absolute;
-  top: 100%;
-  background: black;
-  padding: 10px 0;
+  overflow: hidden;
+  background-color: #000000;
+  max-height: 0px;
+}
+
+.navItem > ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navItem > ul a:hover {
+  text-decoration: underline;
 }
  
 
