@@ -5,7 +5,7 @@ body {
 
 .card {
   top: 100px;
-  left: 50;
+  left: 25;
   border-style: solid;
   height: 200px;
   width: 250px;
@@ -30,6 +30,7 @@ body {
   height: 60px;
   background-color: #000000;
   position: fixed;
+  z-index: 100000000;
 }
 
 .navMain .logo {
@@ -43,55 +44,61 @@ body {
   margin-top: 5px;
 }
 
-.navMain > ul {
-  width: 500px;
-  float: left;
-  list-style-type: none;
-}
-
-.navMain > ul > li {
-  float: left;
-  margin-right: 10px;
-  margin-top: 0px;
-}
-
 .navItem {
   display: inline-block;
   height: 40px;
   width: 100px;
   line-height: 40px;
+  float: left;
   text-align: center;
+  list-style-type: none;
   color: #ffffff;
   font-family: "Roboto";
   font-size: 14;
+}
+
+.navItem a {
   text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14;
 }
 
 .navItem:hover {
-  background-color: #352D2D;
+  background-color: #00CF4F;
 }
 
-.navItem:focus {
-  background-color: #A10F0F;
-}
-
-.navItem:focus ul {
+.navItem:hover ul {
+  padding: 0;
+  background-color: #000000;
+  list-style-type: none;
+  width: 100;
   max-height: 400px;
 }
 
-.navItem > ul {
-  position: absolute;
-  overflow: hidden;
+.navItem:hover ul li {
+  text-align: center;
+  max-height: 400px;
+}
+
+.navItem:hover ul li:hover {
+  text-decoration: underline;
+}
+
+.navItem ul {
+  padding: 0;
   background-color: #000000;
+  list-style-type: none;
+  width: 100;
   max-height: 0px;
 }
 
-.navItem > ul a {
-  color: #ffffff;
-  text-decoration: none;
+.navItem ul li {
+  text-align: center;
+  max-height: 0px;
 }
 
-.navItem > ul a:hover {
+.navItem ul li:hover {
   text-decoration: underline;
 }
  
