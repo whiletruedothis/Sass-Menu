@@ -55,6 +55,7 @@ body {
   color: #ffffff;
   font-family: "Roboto";
   font-size: 14;
+  z-index: 100000000000;
 }
 
 .navItem a {
@@ -62,6 +63,24 @@ body {
   color: #ffffff;
   font-family: "Roboto";
   font-size: 14;
+}
+
+.navItem ul {
+  position: absolute;
+  right: -100px;
+  width: 100;
+  padding: 0;
+  background-color: #000000;
+  list-style-type: none;
+}
+
+.navItem ul li {
+  display: none;
+  text-align: center;
+}
+
+.navItem ul li:hover {
+  text-decoration: underline;
 }
 
 .navItem:hover {
@@ -81,22 +100,6 @@ body {
 }
 
 .navItem:hover ul li:hover {
-  text-decoration: underline;
-}
-
-.navItem ul {
-  padding: 0;
-  background-color: #000000;
-  list-style-type: none;
-  width: 100;
-}
-
-.navItem ul li {
-  text-align: center;
-  display: none;
-}
-
-.navItem ul li:hover {
   text-decoration: underline;
 }
 

@@ -14,7 +14,6 @@ body{
     margin: 10px;
     float: left;
     z-index: 100000;
-     
     .container{
         margin: 25px;
         text-align: center;
@@ -33,7 +32,6 @@ body{
     background-color: #000000;
     position: fixed;
     z-index: 100000000;
-
     .logo{
         float: left;
         height: 40px;
@@ -48,26 +46,36 @@ body{
 
 
 .navItem{
-    //display: inline-block;
     height: 40px;
     width: 100px;
     line-height: 40px;
-    //float: left;
     text-align: center;
     list-style-type: none;
     color: #ffffff;
     font-family: "Roboto";
     font-size: 14;
-
+    z-index: 100000000000;
     a{
         text-decoration: none;
         color: #ffffff;
         font-family: "Roboto";
         font-size: 14;    
     }
-
-
-
+    ul{
+        position: absolute;
+        right: -100px;
+        width: 100;
+        padding: 0;
+        background-color: #000000;
+        list-style-type: none;
+        li{
+            display: none;
+            text-align: center;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }    
     &:hover{
         background-color: #00CF4F;
         ul{
@@ -84,22 +92,6 @@ body{
             }
         }
     }
-
-
-    ul{
-        padding: 0;
-        background-color: #000000;
-        list-style-type: none;
-        width: 100;
-        li{
-            text-align: center;
-            display: none;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-
-    }    
 }
 
 .clearFix{
@@ -108,8 +100,7 @@ body{
         content: "";
         display: block;
         clear: both;
-    }
-  
+    } 
 }
 
 .box{
@@ -118,7 +109,6 @@ body{
     height: 500px;
     background-image: url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=");
     background-size: 100%;
-    
     &:after{
         content: "";
         position: absolute;
@@ -126,16 +116,9 @@ body{
         width: 0;
         height: 0;
         top: 0;
-
         border-top: 25px solid #ffffff;
         border-right: 1250px solid transparent;
-    
-
-
-       // -webkit-transform: skew(0deg, -6deg);
-   
     }
-
     &:before{
         content: "";
         position: absolute;
@@ -143,12 +126,8 @@ body{
         width: 0;
         height: 0;
         bottom: 0;
-
-
-       border-bottom: 25px solid #ffffff;
-       border-right: 1250px solid transparent;
-        //-webkit-transform: skew(0deg, 2deg);
-    
+        border-bottom: 25px solid #ffffff;
+        border-right: 1250px solid transparent;    
     }
 }
 
@@ -158,10 +137,8 @@ body{
     background: #000000;
     left: -100%;
     transition: left 1s;
-
     &--show{
         left: 0;
         transition: left 1s;        
     }
-
 }
