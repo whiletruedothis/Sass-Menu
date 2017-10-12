@@ -47,11 +47,9 @@ body {
 }
 
 .navItem {
-  display: inline-block;
   height: 40px;
   width: 100px;
   line-height: 40px;
-  float: left;
   text-align: center;
   list-style-type: none;
   color: #ffffff;
@@ -140,6 +138,19 @@ body {
   bottom: 0;
   border-bottom: 25px solid #ffffff;
   border-right: 1250px solid transparent;
+}
+
+.nav {
+  position: fixed;
+  top: 60px;
+  background: #000000;
+  left: -100%;
+  transition: left 1s;
+}
+
+.nav--show {
+  left: 0;
+  transition: left 1s;
 }
  
 
